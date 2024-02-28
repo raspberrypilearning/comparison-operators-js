@@ -1,59 +1,102 @@
-## Introduction
+Comparison operators in JavaScript are used to compare two values and return a Boolean result (either `true` or `false`). These are some commonly used comparison operators:
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
++ Equal (==) Operator: this operator checks if two values are equal, and it converts the data types to be the same if they are different.
 
-### What you will make
-
---- no-print ---
-Add instructions for interacting with the embedded content here.
-
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
-
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
-
---- collapse ---
+--- code ---
 ---
-title: What you will need
+language: js
+filename: script.js
+line_numbers: true
 ---
-### Hardware
+    var num1 = 5;
+    var num2 = "5";
+    console.log(num1 == num2); // Outputs: true
+    
+--- /code ---
 
-+ A computer or tablet capable of running Scratch 3
+    In this example, num1 and num2 are considered equal because the values are the same after data type conversion.
 
-### Software
++ Strict Equal (===) Operator: this operator checks if two values are equal without converting them to be the same data type. It also checks if the data types are the same.
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
+--- code ---
 ---
-title: What you will learn
+language: js
+filename: script.js
+line_numbers: true
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
+    var num1 = 5;
+    var num2 = "5";
+    console.log(num1 === num2); // Outputs: false
+    
+--- /code ---
 
---- /collapse ---
+     In this example, num1 and num2 are not strictly equal because their data types are different
 
---- collapse ---
++ Not Equal (!=) Operator: this operator checks if two values are not equal and converts them to the same data type if they are different.
+
+--- code ---
 ---
-title: Additional information for educators
+language: js
+filename: script.js
+line_numbers: true
 ---
 
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
+    var num1 = 5;
+    var num2 = "5";
+    console.log(num1 != num2); // Outputs: false
+    
+--- /code ---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
+    In this example, num1 and num2 are equal after the data types are converted. It will return as false.
 
---- /collapse ---
++ Strict Not Equal (!==) Operator: this operator checks if two values are not equal, without converting them to the same data type. It also checks if the data types are different.
+
+--- code ---
+---
+language: js
+filename: script.js
+line_numbers: true
+---
+
+    var num1 = 5;
+    var num2 = "5";
+    console.log(num1 !== num2); // Outputs: true
+  
+--- /code ---
+
+    In this example, num1 and num2 have different data types. So it will return as true.
+
++ Greater Than (>) Operator: this operator checks if the value on the left is greater than the value on the right
+
+--- code ---
+---
+language: js
+filename: script.js
+line_numbers: true
+---
+
+    var num1 = 10;
+    var num2 = 5;
+    console.log(num1 > num2); // Outputs: true
+  
+--- /code ---
+
+    In this example, num1 is greater than num2 so it will return as true.
+
++ Less Than (<) Operator: this operator checks if the value on the left is less than the value on the right.
+
+--- code ---
+---
+language: js
+filename: script.js
+line_numbers: true
+---
+
+    var num1 = 10;
+    var num2 = 15;
+    console.log(num1 < num2); // Outputs: true
+  
+--- /code ---
+
+     In this example, num1 is less than num2 so it will return as true.
