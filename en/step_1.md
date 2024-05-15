@@ -15,7 +15,7 @@ line_numbers: true
     
 --- /code ---
 
-    In this example, num1 and num2 are considered equal because the values are the same after data type conversion.
+- In this example, num1 and num2 are considered equal because the values are the same after data type conversion.
 
 ### Strict equal (===)
 Checks if two values are equal without converting them to be the same data type. It also checks if the data types are the same.
@@ -33,7 +33,7 @@ line_numbers: true
     
 --- /code ---
 
-     In this example, num1 and num2 are not strictly equal because their data types are different
+- In this example, num1 and num2 are not strictly equal because their data types are different
 
 ### Not equal (!=) 
 Checks if two values are not equal and converts them to the same data type if they are different.
@@ -51,7 +51,7 @@ line_numbers: true
     
 --- /code ---
 
-    In this example, num1 and num2 are equal after the data types are converted. It will return as false.
+- In this example, num1 and num2 are equal after the data types are converted. It will return as false.
 
 ### Strict not equal (!==) 
 Checks if two values are not equal, without converting them to the same data type. It also checks if the data types are different.
@@ -69,10 +69,10 @@ line_numbers: true
   
 --- /code ---
 
-    In this example, num1 and num2 have different data types. So it will return as true.
+- In this example, num1 and num2 have different data types. So it will return as true.
 
 ### Greater than (>) 
-Checks if the value on the left is greater than the value on the right
+Checks if the value on the left is greater than the value on the right.
 
 --- code ---
 ---
@@ -87,7 +87,7 @@ line_numbers: true
   
 --- /code ---
 
-    In this example, num1 is greater than num2 so it will return as true.
+- In this example, num1 is greater than num2, so it will return as true.
 
 ### Less than (<)
 Checks if the value on the left is less than the value on the right.
@@ -105,4 +105,4 @@ line_numbers: true
   
 --- /code ---
 
-     In this example, num1 is less than num2 so it will return as true.
+- In this example, num1 is less than num2, so it will return as true.
