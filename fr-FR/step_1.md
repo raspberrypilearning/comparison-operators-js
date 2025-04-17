@@ -1,29 +1,8 @@
-Comparison operators in JavaScript are used to compare two values and return a Boolean result (either `true` or `false`). These are some commonly used comparison operators:
+Les opérateurs de comparaison en JavaScript sont utilisés pour comparer deux valeurs et renvoyer un résultat booléen (soit« vrai » soit « faux »). Voici quelques opérateurs de comparaison courants :
 
-### Equal (==)
+### Égal à (==)
 
-Checks if two values are equal, and it converts the data types to be the same if they are different.
-
-## --- code ---
-
-language: js
-filename: script.js
-line_numbers: true
--------------------------------------------------------
-
-```
-var num1 = 5;
-var num2 = "5";
-console.log(num1 == num2); // Outputs: true
-```
-
-\--- /code ---
-
-- In this example, num1 and num2 are considered equal because the values are the same after data type conversion.
-
-### Strict equal (===)
-
-Checks if two values are equal without converting them to be the same data type. It also checks if the data types are the same.
+Vérifie si deux valeurs sont égales et les convertit vers le même type de données si elles sont différentes.
 
 ## --- code ---
 
@@ -35,16 +14,16 @@ line_numbers: true
 ```
 var num1 = 5;
 var num2 = "5";
-console.log(num1 === num2); // Outputs: false
+console.log(num1 == num2); // Résultat : vrai
 ```
 
 \--- /code ---
 
-- In this example, num1 and num2 are not strictly equal because their data types are different
+- Dans cet exemple, les valeurs num1 et num2 sont considérées comme égales, car elles sont identiques après la conversion du type de données.
 
-### Not equal (!=)
+### Strictement égal à (===)
 
-Checks if two values are not equal and converts them to the same data type if they are different.
+Vérifie si deux valeurs sont égales sans les convertir vers le même type de données. Vérifie également si les types de données sont les mêmes.
 
 ## --- code ---
 
@@ -56,16 +35,16 @@ line_numbers: true
 ```
 var num1 = 5;
 var num2 = "5";
-console.log(num1 != num2); // Outputs: false
+console.log(num1 === num2); // Résultat : faux
 ```
 
 \--- /code ---
 
-- In this example, num1 and num2 are equal after the data types are converted. It will return as false.
+- Dans cet exemple, les valeurs num1 et num2 ne sont pas strictement égales, car leurs types de données sont différents
 
-### Strict not equal (!==)
+### Pas égal à (!=)
 
-Checks if two values are not equal, without converting them to the same data type. It also checks if the data types are different.
+Vérifie si deux valeurs ne sont pas égales et les convertit vers le même type de données si elles sont différentes.
 
 ## --- code ---
 
@@ -77,16 +56,37 @@ line_numbers: true
 ```
 var num1 = 5;
 var num2 = "5";
-console.log(num1 !== num2); // Outputs: true
+console.log(num1 != num2); // Résultat : faux
 ```
 
 \--- /code ---
 
-- In this example, num1 and num2 have different data types. So it will return as true.
+- Dans cet exemple, les valeurs num1 et num2 sont égales après la conversion des types de données. Le résultat est « faux ».
 
-### Greater than (>)
+### Strictement pas égal à (!==)
 
-Checks if the value on the left is greater than the value on the right.
+Vérifie si deux valeurs ne sont pas égales, sans les convertir vers le même type de données. Vérifie également si les types de données sont différents.
+
+## --- code ---
+
+language: js
+filename: script.js
+line_numbers: true
+-------------------------------------------------------
+
+```
+var num1 = 5;
+var num2 = "5";
+console.log(num1 !== num2); // Résultat : vrai
+```
+
+\--- /code ---
+
+- Dans cet exemple, les valeurs num1 et num2 ont des types de données différents. Le résultat est donc « vrai ».
+
+### Supérieur à  (>)
+
+Vérifie si la valeur de gauche est supérieure à la valeur de droite.
 
 ## --- code ---
 
@@ -98,16 +98,16 @@ line_numbers: true
 ```
 var num1 = 10;
 var num2 = 5;
-console.log(num1 > num2); // Outputs: true
+console.log(num1 > num2); // Résultat : vrai
 ```
 
 \--- /code ---
 
-- In this example, num1 is greater than num2, so it will return as true.
+- Dans cet exemple, la valeur num1 est supérieure à la valeur num2, le résultat est donc « vrai ».
 
-### Less than (<)
+### Inférieur à (<)
 
-Checks if the value on the left is less than the value on the right.
+Vérifie si la valeur de gauche est inférieure à la valeur de droite.
 
 ## --- code ---
 
@@ -119,9 +119,9 @@ line_numbers: true
 ```
 var num1 = 10;
 var num2 = 15;
-console.log(num1 < num2); // Outputs: true
+console.log(num1 < num2); // Résultat : vrai
 ```
 
 \--- /code ---
 
-- In this example, num1 is less than num2, so it will return as true.
+- Dans cet exemple, la valeur num1 est inférieure à la valeur num2, le résultat est donc « vrai ».
