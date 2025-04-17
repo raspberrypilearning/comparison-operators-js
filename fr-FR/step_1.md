@@ -1,4 +1,4 @@
-Les opérateurs de comparaison en JavaScript sont utilisés pour comparer deux valeurs et renvoyer un résultat booléen (soit« vrai » soit « faux »). Voici quelques opérateurs de comparaison courants :
+Les opérateurs de comparaison en JavaScript sont utilisés pour comparer deux valeurs et renvoyer un résultat booléen (soit `vrai` soit `faux`). Voici quelques opérateurs de comparaison courants :
 
 ### Égal à (==)
 Vérifie si deux valeurs sont égales et les convertit vers le même type de données si elles sont différentes.
