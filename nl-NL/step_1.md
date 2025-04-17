@@ -1,29 +1,8 @@
-Comparison operators in JavaScript are used to compare two values and return a Boolean result (either `true` or `false`). These are some commonly used comparison operators:
+Vergelijkingsoperatoren in JavaScript worden gebruikt om twee waarden te vergelijken en een Booleaans resultaat te retourneren (`waar` of `onwaar`). Dit zijn enkele veelgebruikte vergelijkingsoperatoren:
 
-### Equal (==)
+### Gelijk (==)
 
-Checks if two values are equal, and it converts the data types to be the same if they are different.
-
-## --- code ---
-
-language: js
-filename: script.js
-line_numbers: true
--------------------------------------------------------
-
-```
-var num1 = 5;
-var num2 = "5";
-console.log(num1 == num2); // Outputs: true
-```
-
-\--- /code ---
-
-- In this example, num1 and num2 are considered equal because the values are the same after data type conversion.
-
-### Strict equal (===)
-
-Checks if two values are equal without converting them to be the same data type. It also checks if the data types are the same.
+Controleert of twee waarden gelijk zijn en converteert de gegevenstypen naar hetzelfde type als ze verschillend zijn.
 
 ## --- code ---
 
@@ -35,16 +14,16 @@ line_numbers: true
 ```
 var num1 = 5;
 var num2 = "5";
-console.log(num1 === num2); // Outputs: false
+console.log(num1 == num2); // Uitvoer: waar
 ```
 
 \--- /code ---
 
-- In this example, num1 and num2 are not strictly equal because their data types are different
+- In dit voorbeeld worden num1 en num2 als gelijk beschouwd, omdat de waarden hetzelfde zijn na conversie van het gegevenstype.
 
-### Not equal (!=)
+### Strikt gelijk (===)
 
-Checks if two values are not equal and converts them to the same data type if they are different.
+Controleert of twee waarden gelijk zijn zonder ze te converteren naar hetzelfde gegevenstype. Er wordt ook gecontroleerd of de gegevenstypen hetzelfde zijn.
 
 ## --- code ---
 
@@ -56,16 +35,16 @@ line_numbers: true
 ```
 var num1 = 5;
 var num2 = "5";
-console.log(num1 != num2); // Outputs: false
+console.log(num1 == num2); // Uitvoer: onwaar
 ```
 
 \--- /code ---
 
-- In this example, num1 and num2 are equal after the data types are converted. It will return as false.
+- In dit voorbeeld zijn num1 en num2 niet strikt gelijk omdat hun gegevenstypen verschillend zijn
 
-### Strict not equal (!==)
+### Niet gelijk (!=)
 
-Checks if two values are not equal, without converting them to the same data type. It also checks if the data types are different.
+Controleert of twee waarden niet gelijk zijn en converteert ze naar hetzelfde gegevenstype als ze verschillend zijn.
 
 ## --- code ---
 
@@ -77,16 +56,37 @@ line_numbers: true
 ```
 var num1 = 5;
 var num2 = "5";
-console.log(num1 !== num2); // Outputs: true
+console.log(num1 != num2); // Uitvoer: onwaar
 ```
 
 \--- /code ---
 
-- In this example, num1 and num2 have different data types. So it will return as true.
+- In dit voorbeeld zijn num1 en num2 gelijk nadat de gegevenstypen zijn geconverteerd. Het zal als 'onwaar' worden geretourneerd.
 
-### Greater than (>)
+### Strikt niet gelijk (!==)
 
-Checks if the value on the left is greater than the value on the right.
+Controleert of twee waarden ongelijk zijn, zonder ze naar hetzelfde gegevenstype te converteren. Er wordt ook gecontroleerd of de gegevenstypen verschillend zijn.
+
+## --- code ---
+
+language: js
+filename: script.js
+line_numbers: true
+-------------------------------------------------------
+
+```
+var num1 = 5;
+var num2 = "5";
+console.log(num1 !== num2); // Uitvoer: waar
+```
+
+\--- /code ---
+
+- In dit voorbeeld hebben num1 en num2 verschillende gegevenstypen. Het zal dus als waar worden geretourneerd.
+
+### Groter dan (>)
+
+Controleert of de waarde aan de linkerkant groter is dan de waarde aan de rechterkant.
 
 ## --- code ---
 
@@ -98,16 +98,16 @@ line_numbers: true
 ```
 var num1 = 10;
 var num2 = 5;
-console.log(num1 > num2); // Outputs: true
+console.log(num1 > num2); // Uitvoer: waar
 ```
 
 \--- /code ---
 
-- In this example, num1 is greater than num2, so it will return as true.
+- In dit voorbeeld is num1 groter dan num2 en wordt de waarde waar geretourneerd.
 
-### Less than (<)
+### Kleiner dan (<)
 
-Checks if the value on the left is less than the value on the right.
+Controleert of de waarde aan de linkerkant kleiner is dan de waarde aan de rechterkant.
 
 ## --- code ---
 
@@ -119,9 +119,9 @@ line_numbers: true
 ```
 var num1 = 10;
 var num2 = 15;
-console.log(num1 < num2); // Outputs: true
+console.log(num1 < num2); // Uitvoer: waar
 ```
 
 \--- /code ---
 
-- In this example, num1 is less than num2, so it will return as true.
+- In dit voorbeeld is num1 kleiner dan num2 en wordt de waarde 'waar' geretourneerd.
